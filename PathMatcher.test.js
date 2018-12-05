@@ -1,4 +1,4 @@
-const PathMatcher = require("./pathmatcher.js");
+const PathMatcher = require("./PathMatcher.js");
 
 describe("PathMatcher", () => {
   it("should throw if parts are separated by an empty string", () => {
