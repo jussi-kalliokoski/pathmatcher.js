@@ -1,0 +1,58 @@
+{
+  "name": "pathmatcher",
+  "version": "1.0.0",
+  "description": "A utility for matching paths to patterns and filling in the route parameters.",
+  "main": "pathmatcher.js",
+  "scripts": {
+    "test": "npm run lint && npm run typecheck && npm run jest",
+    "lint": "eslint *.js",
+    "typecheck": "flow check && tsc",
+    "jest": "jest",
+    "fmt": "eslint --fix *.js",
+    "coveralls": "cat ./coverage/lcov.info | COVERALLS_SERVICE_NAME=\"travis-ci\" coveralls"
+  },
+  "files": [
+    "PathMatcher.js",
+    "PathMatcher.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jussi-kalliokoski/pathmatcher.js.git"
+  },
+  "keywords": [
+    "url",
+    "path",
+    "match",
+    "router",
+    "routing",
+    "demux",
+    "mux",
+    "http",
+    "typescript",
+    "flow",
+    "typed",
+    "performance",
+    "service",
+    "worker",
+    "cloudflare"
+  ],
+  "author": "Jussi Kalliokoski <jussi.kalliokoski@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jussi-kalliokoski/pathmatcher.js/issues"
+  },
+  "homepage": "https://github.com/jussi-kalliokoski/pathmatcher.js#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "flow-bin": "^0.87.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "typescript": "^3.2.1"
+  },
+  "jest": {
+    "collectCoverage": true
+  }
+}
